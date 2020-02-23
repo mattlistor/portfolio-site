@@ -33,18 +33,10 @@ div.name{
 }
 
 img.name {
-  /* background-color: red; */
   margin: 0px 20px 25px 20px;
-  /* min-width: 300px; */
-  /* max-width: 600px; */
-  /* max-height: 40px; 
-  min-height: 30px; */
   height: 5vw;
   max-height: 50px; 
   min-height: 40px;
-  /* height: 10vw; */
-
-
   animation-name: moveDown;
   animation-duration: 0.7s;
   visibility: visible !important;	 
@@ -228,7 +220,6 @@ div.image {
   background-size: cover;
   /* filter: blur(5px); */
   transform: scale(1.0);
-
 }
 
 .image:after {
@@ -240,5 +231,9 @@ div.image {
   transition: all 1s;
   -webkit-transition: all 1s;
   font-size: 5px;
+}
 
+@media  screen and (max-width: 480px) {
+  img.name { min-height: 30px;   margin: 0px 15px 10px 15px; }
+  div.name { min-height: 30px;   margin-bottom: 10px;}
 }
