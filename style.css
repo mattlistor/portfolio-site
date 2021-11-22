@@ -11,22 +11,38 @@ body{
     align-items: center;
 }
 
-/* .logo {
-    margin-bottom: 30px;
-    width: 100%;
-    max-width: 600px;
-    height: auto; 
+div.flfc{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
 
-    animation-name: moveDown;
-    animation-duration: 0.7s;
-    visibility: visible !important;	     
-} */
+a.flfc { 
+  transition-duration: 0.2s; 
+  margin-top: 0px;
+}
+
+img.flfc{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* margin-top: 50px; */
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.2s;
+}
+
+img.flfc:hover {   filter: invert(27%) sepia(41%) saturate(2878%) hue-rotate(370deg) brightness(135%) contrast(97%); }
 
 div.name{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* margin: 0px 20px 30px 20px; */
   margin-bottom: 20px;
   width: 100%;
   justify-content: center;
